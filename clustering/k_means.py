@@ -11,6 +11,7 @@ if __name__ == "__main__":
 
     X = dataset.drop('competitorname', axis=1)
 
+#batch_size = de a cuantos datos irá formando los grupos
     kmeans = MiniBatchKMeans(n_clusters=4, batch_size=8).fit(X)
     print("Total de centros: " , len(kmeans.cluster_centers_))
     print("="*64)

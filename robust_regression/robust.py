@@ -9,7 +9,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics  import mean_squared_error
 
 if __name__ == "__main__":
-    dataset =  pd.read_csv('datasets/felicidad_corrupt.csv')
+    dataset =  pd.read_csv('../datasets/felicidad_corrupt.csv')
     print(dataset.head(5))
 
     X = dataset.drop(['country', 'score'], axis=1)
